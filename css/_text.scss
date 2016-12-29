@@ -1,0 +1,76 @@
+
+/***********************************
+Font-face config
+************************************/
+
+@font-face {
+    font-family: 'NokiaPureTWebLight';
+    src: url('../fonts/NokiaPureTWeb_Lt.eot');
+    src: url('../fonts/NokiaPureTWeb_Lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Lt.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Lt.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Lt.svg#NokiaPureTWebLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebRegular';
+    src: url('../fonts/NokiaPureTWeb_Rg.eot');
+    src: url('../fonts/NokiaPureTWeb_Rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Rg.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Rg.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Rg.svg#NokiaPureTWebRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebBold';
+    src: url('../fonts/NokiaPureTWeb_Bd.eot');
+    src: url('../fonts/NokiaPureTWeb_Bd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Bd.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Bd.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Bd.svg#NokiaPureTWebBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nokia_pure_headlinelight';
+    src: url('../fonts/nokiapureheadline_light-webfont.woff2') format('woff2'),
+         url('../fonts/nokiapureheadline_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nokia_pure_headlineultraLt';
+    src: url('../fonts/nokiapureheadline_ultralight-webfont.woff2') format('woff2'),
+         url('../fonts/nokiapureheadline_ultralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$nokiafont-light: "NokiaPureTWebLight";
+$nokiafont-regular: "NokiaPureTWebRegular";
+$nokiafont-bold: "NokiaPureTWebBold";
+$nokiafonth-light: "nokia_pure_headlinelight";
+$nokiafonth-ultra: "nokia_pure_headlineultraLt";
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+$screen-sm-min: 768px;
+/* Medium devices (desktops, 992px and up) */
+$screen-md-min: 992px;
+/* Large devices (large desktops, 1200px and up) */
+$screen-lg-min: 1200px;
