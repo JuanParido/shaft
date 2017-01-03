@@ -1,15 +1,93 @@
-color1 {
-            
-            background: #E73354;
-            border-top: none;
-            height: 20px;
-            margin: 0 10px; 
-            padding: 20px;
-            position:relative;
-        }
+/** General Styles Graphic Bar**/
+
+.horizontal-options { 
+                                display: inline-flex;
+                                text-align: center;
+                                align-items: baseline;
+                                margin-top:25px;
+                        }
+                        .horizontal-text { 
+                            margin-top:25px;
+    }
+
+.horizontal-colors {
+    display: inline-flex;
+.horizontal-text-color { 
+                            margin-top:10px;
+                            float: left;
+    }
+}
+[class^='eje-'] {
+  position: absolute;
+  left: 0;
+  bottom: 0rem;
+  width: 100%;
+  padding: 1rem 1rem 0 2rem;
+  height: 80%;
+}
+
+.eje-y li {
+  height: 25%;
+  border-top: 1px solid #777;
+}
+[data-ejeY]:before {
+  content: attr(data-ejeY);
+  display: inline-block;
+  width: 2rem;
+  text-align: right;
+  line-height: 0;
+  position: relative;
+  left: -2.5rem;
+  top: -.5rem;
+} 
+
+/** Option colors Graphic Bar**/
+
+.color1 {
+    background: #E73354;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.color2 {
+    background: #00ACD7;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.color3 {
+    background: #606060;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.color4 {
+    background: #F39324;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.color5 {
+    background: #35AA3F;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.color6 {
+    background: #00ACD7;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
 
 
-
+/** Porcentual options Graphic Bar**/
 
 .option1 {
     		

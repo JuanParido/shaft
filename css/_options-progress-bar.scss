@@ -1,0 +1,128 @@
+
+
+/** Progress graphic bar general**/
+
+.progress-general-container{ margin: 20px;
+
+	.progress {
+	  height: 20px;
+	  margin-bottom: 15px;
+	  overflow: visible;
+	  background-color: #eaeaea;
+	  border-radius: 0;
+	  -webkit-box-shadow: none;
+	          box-shadow: none;
+	}
+
+
+
+.progress-text {
+	font:700 12px/15px Arial,sans-serif;
+	right:15px;
+	bottom:100%;
+	display: block;
+	transition:all 0.3s;
+	-webkit-transition:all 0.3s;
+	-ms-transition:all 0.3s;
+	-moz-transition:all 0.3s;
+	-o-transition:all 0.3s;
+}
+
+}
+
+
+/** Progress graphic colors **/
+
+.progress-colors{
+	display: inline-flex;
+	margin: 0 auto;
+		.progress-text-color {
+   		 	float: left;
+    		margin: 10px;
+}
+.progress-color1 {
+    background: #E73354;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.progress-color2 {
+    background: #00ACD7;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.progress-color3 {
+    background: #F39324;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+.progress-color4 {
+    background: #35AA3F;
+    width: 20px;
+    height: 20px;
+    float:left;
+    margin: 7px;
+}
+}
+
+
+
+/** Porcentual options Graphic Bar**/
+
+
+.progress-bar-1 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.progress-bar-2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #00ACD7;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.progress-bar-3 {
+  float: left;
+  width: 80%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #F39324;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.progress-bar-4 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #35AA3F;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
