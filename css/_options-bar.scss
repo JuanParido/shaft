@@ -1,34 +1,46 @@
 /** General Styles Graphic Bar**/
 
+.graphic-options-1 li {
+    margin: 10px !important;
+}
+
+.graphic-options-2 {
+    margin-bottom: 60px;
+}
+
 .horizontal-options { 
                                 display: inline-flex;
-                                text-align: center;
-                                align-items: baseline;
-                                margin-top:25px;
+                                    align-items: center;
+    width: 95%;
+    margin: 16px 70px;
                         }
                         .horizontal-text { 
-                            margin-top:25px;
+                                    margin-top: 25px;
+    position: absolute;
+    bottom: -50px;
+
     }
+
+
 
 .horizontal-colors {
     display: inline-flex;
+        margin-bottom: -5px;
 .horizontal-text-color { 
                             margin-top:10px;
                             float: left;
     }
 }
 [class^='eje-'] {
-  position: absolute;
-  left: 0;
-  bottom: 0rem;
-  width: 100%;
-  padding: 1rem 1rem 0 2rem;
-  height: 80%;
+     left: 0;
+    bottom: 1rem;
+    width: 100%;
+    height: 115px;
 }
 
 .eje-y li {
-  height: 25%;
-  border-top: 1px solid #777;
+  height: 30%;
+  border-top: 1px solid #ccc;
 }
 [data-ejeY]:before {
   content: attr(data-ejeY);
@@ -40,7 +52,10 @@
   left: -2.5rem;
   top: -.5rem;
 } 
-
+.options {
+    height: 295px;
+    width: 20%;
+}
 /** Option colors Graphic Bar**/
 
 .color1 {
@@ -91,40 +106,44 @@
 
 .option1 {
     		
-    		background: #E73354;
-    		border-top: none;
-    		height: 180px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
+    		    background: #E73354;
+                border-top: none;
+                height: 20%;
+                margin: 0 5px;
+                padding: 20px;
+                position: absolute;
+              bottom: -5px;
     	}
 .option2 {
     		
     		background: #00ACD7;
     		border-top: none;
-    		height: 100px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
-    		bottom: 0;
+             height: 20%;
+             margin: 0 5px;
+                padding: 20px;
+                position: absolute;
+              bottom: -5px;
     	}
  .option3 {
     		
     		    background: #606060;
 	    		border-top: none;
-	    		height: 200px;
-	    		margin: 0 10px; 
-	    		padding: 20px;
-   
+	    		height: 50%;
+	    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
 
     	}
   .option4 {
     		
     		background: #F39324;
     		border-top: none;
-    		height: 100px;
-    		margin: 0 10px; 
-    		padding: 20px;
+    		height: 30%;
+    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
 
     	}
 
@@ -132,28 +151,31 @@
     		
     		background: #35AA3F;
     		border-top: none;
-    		height: 180px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
+    		height: 40%;
+    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
     	}
 .option6 {
     		
     		background: #00ACD7;
     		border-top: none;
-    		height: 100px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
-    		bottom: 0;
+    		height: 10%;
+    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
     	}
  .option7 {
     		
     		    background: #606060;
 	    		border-top: none;
-	    		height: 200px;
-	    		margin: 0 10px; 
-	    		padding: 20px;
+	    		height: 70%;
+	    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
    
 
     	}
@@ -161,9 +183,11 @@
     		
     		background: #35AA3F;
     		border-top: none;
-    		height: 120px;
-    		margin: 0 10px; 
-    		padding: 20px;
+    		height: 70%;
+    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
 
     	}
 
@@ -171,39 +195,21 @@
     		
     		    background: #F39324;
 	    		border-top: none;
-	    		height: 200px;
-	    		margin: 0 10px; 
-	    		padding: 20px;
-   
+	    		height: 80%;
+	    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
 
     	}
   .option10 {
     		
     		background: #606060;
     		border-top: none;
-    		height: 180px;
-    		margin: 0 10px; 
-    		padding: 20px;
-
+    		height:90%;
+    		margin: 0 5px;
+    padding: 20px;
+    position: absolute;
+  bottom: -5px;
     	}
-  .option11 {
-    		
-    		background: #E73354;
-    		border-top: none;
-    		height: 180px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
-    	}
-.option12 {
-    		
-    		background: #00ACD7;
-    		border-top: none;
-    		height: 100px;
-    		margin: 0 10px; 
-    		padding: 20px;
-    		position:relative;
-    		bottom: 0;
-    	}
-
 
