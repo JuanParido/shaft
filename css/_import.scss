@@ -1,0 +1,96 @@
+.import {
+
+width: 600px;
+
+
+.import-progress-container {
+    height: 20px;
+    margin-bottom: 50px;
+    overflow: visible;
+  
+}
+.import-progress {
+	  height: 10px;
+	  margin-bottom: 15px;
+	  overflow: visible;
+	  background-color: #eaeaea;
+	  border-radius: 0;
+	  -webkit-box-shadow: none;
+	          box-shadow: none;
+	            clear: both;
+	}
+
+}
+
+.drag-content{
+text-align: center;
+}
+.picture-upload {
+    float: left;
+    margin: 5px 6px 5px 0px;
+}
+.close-upload{
+float:right;
+    margin: 5px 0px;
+
+}
+
+.import-upload {
+    top: 2px;
+}
+
+.complete{
+    text-align: left;
+    clear: both;
+    color: #999;
+}
+.upload-control {
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    align-content: center;
+    background-color: #5bc0de;
+}
+
+.upload{
+    padding: 20px;
+    border: 1px solid #999;
+    font-size: 30px;
+    color: #999;
+    margin: 20px;
+    border-radius: 50px;
+}
+.doc-upload {
+    float: left;
+    margin: 5px 6px 5px 0px;
+}
+.drag {
+    background: #eee;
+    padding: 20px;
+    height: 200px;
+    margin: 20px;
+    border: 1px dotted #999;
+
+    		p{ text-align:center;
+    		    font-weight: 700;;
+}
+}
+
+.import-progress-text {
+
+				h5 {float:left;
+
+}
+}
+.import-progress-bar-1 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
