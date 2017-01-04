@@ -166,48 +166,57 @@ input.form-control {
 
 /** General Styles Graphic Bar**/
 /* line 3, _options-bar.scss */
+.graphic-options-1 li {
+  margin: 10px !important; }
+
+/* line 7, _options-bar.scss */
+.graphic-options-2 {
+  margin-bottom: 60px; }
+
+/* line 11, _options-bar.scss */
 .horizontal-options {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  text-align: center;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin-top: 25px; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  margin: 16px 70px; }
 
-/* line 9, _options-bar.scss */
+/* line 17, _options-bar.scss */
 .horizontal-text {
-  margin-top: 25px; }
+  margin-top: 25px;
+  position: absolute;
+  bottom: -50px; }
 
-/* line 13, _options-bar.scss */
+/* line 26, _options-bar.scss */
 .horizontal-colors {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
-  /* line 15, _options-bar.scss */
+  display: inline-flex;
+  margin-bottom: -5px; }
+  /* line 29, _options-bar.scss */
   .horizontal-colors .horizontal-text-color {
     margin-top: 10px;
     float: left; }
 
-/* line 20, _options-bar.scss */
+/* line 34, _options-bar.scss */
 [class^='eje-'] {
-  position: absolute;
   left: 0;
-  bottom: 0rem;
+  bottom: 1rem;
   width: 100%;
-  padding: 1rem 1rem 0 2rem;
-  height: 80%; }
+  height: 115px; }
 
-/* line 29, _options-bar.scss */
+/* line 41, _options-bar.scss */
 .eje-y li {
-  height: 25%;
-  border-top: 1px solid #777; }
+  height: 30%;
+  border-top: 1px solid #ccc; }
 
-/* line 33, _options-bar.scss */
+/* line 45, _options-bar.scss */
 [data-ejeY]:before {
   content: attr(data-ejeY);
   display: inline-block;
@@ -218,8 +227,13 @@ input.form-control {
   left: -2.5rem;
   top: -.5rem; }
 
+/* line 55, _options-bar.scss */
+.options {
+  height: 295px;
+  width: 20%; }
+
 /** Option colors Graphic Bar**/
-/* line 46, _options-bar.scss */
+/* line 61, _options-bar.scss */
 .color1 {
   background: #E73354;
   width: 20px;
@@ -227,7 +241,7 @@ input.form-control {
   float: left;
   margin: 7px; }
 
-/* line 53, _options-bar.scss */
+/* line 68, _options-bar.scss */
 .color2 {
   background: #00ACD7;
   width: 20px;
@@ -235,7 +249,7 @@ input.form-control {
   float: left;
   margin: 7px; }
 
-/* line 60, _options-bar.scss */
+/* line 75, _options-bar.scss */
 .color3 {
   background: #606060;
   width: 20px;
@@ -243,7 +257,7 @@ input.form-control {
   float: left;
   margin: 7px; }
 
-/* line 67, _options-bar.scss */
+/* line 82, _options-bar.scss */
 .color4 {
   background: #F39324;
   width: 20px;
@@ -251,7 +265,7 @@ input.form-control {
   float: left;
   margin: 7px; }
 
-/* line 74, _options-bar.scss */
+/* line 89, _options-bar.scss */
 .color5 {
   background: #35AA3F;
   width: 20px;
@@ -259,7 +273,7 @@ input.form-control {
   float: left;
   margin: 7px; }
 
-/* line 81, _options-bar.scss */
+/* line 96, _options-bar.scss */
 .color6 {
   background: #00ACD7;
   width: 20px;
@@ -268,342 +282,105 @@ input.form-control {
   margin: 7px; }
 
 /** Porcentual options Graphic Bar**/
-/* line 92, _options-bar.scss */
+/* line 107, _options-bar.scss */
 .option1 {
   background: #E73354;
   border-top: none;
-  height: 180px;
-  margin: 0 10px;
+  height: 20%;
+  margin: 0 5px;
   padding: 20px;
-  position: relative; }
+  position: absolute;
+  bottom: -5px; }
 
-/* line 101, _options-bar.scss */
+/* line 117, _options-bar.scss */
 .option2 {
   background: #00ACD7;
   border-top: none;
-  height: 100px;
-  margin: 0 10px;
+  height: 20%;
+  margin: 0 5px;
   padding: 20px;
-  position: relative;
-  bottom: 0; }
+  position: absolute;
+  bottom: -5px; }
 
-/* line 111, _options-bar.scss */
+/* line 127, _options-bar.scss */
 .option3 {
   background: #606060;
   border-top: none;
-  height: 200px;
-  margin: 0 10px;
-  padding: 20px; }
+  height: 50%;
+  margin: 0 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: -5px; }
 
-/* line 121, _options-bar.scss */
+/* line 138, _options-bar.scss */
 .option4 {
   background: #F39324;
   border-top: none;
-  height: 100px;
-  margin: 0 10px;
-  padding: 20px; }
+  height: 30%;
+  margin: 0 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: -5px; }
 
-/* line 131, _options-bar.scss */
+/* line 150, _options-bar.scss */
 .option5 {
   background: #35AA3F;
   border-top: none;
-  height: 180px;
-  margin: 0 10px;
+  height: 40%;
+  margin: 0 5px;
   padding: 20px;
-  position: relative; }
+  position: absolute;
+  bottom: -5px; }
 
-/* line 140, _options-bar.scss */
+/* line 160, _options-bar.scss */
 .option6 {
   background: #00ACD7;
   border-top: none;
-  height: 100px;
-  margin: 0 10px;
+  height: 10%;
+  margin: 0 5px;
   padding: 20px;
-  position: relative;
-  bottom: 0; }
+  position: absolute;
+  bottom: -5px; }
 
-/* line 150, _options-bar.scss */
+/* line 170, _options-bar.scss */
 .option7 {
   background: #606060;
   border-top: none;
-  height: 200px;
-  margin: 0 10px;
-  padding: 20px; }
+  height: 70%;
+  margin: 0 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: -5px; }
 
-/* line 160, _options-bar.scss */
+/* line 182, _options-bar.scss */
 .option8 {
   background: #35AA3F;
   border-top: none;
-  height: 120px;
-  margin: 0 10px;
-  padding: 20px; }
+  height: 70%;
+  margin: 0 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: -5px; }
 
-/* line 170, _options-bar.scss */
+/* line 194, _options-bar.scss */
 .option9 {
   background: #F39324;
   border-top: none;
-  height: 200px;
-  margin: 0 10px;
-  padding: 20px; }
+  height: 80%;
+  margin: 0 5px;
+  padding: 20px;
+  position: absolute;
+  bottom: -5px; }
 
-/* line 180, _options-bar.scss */
+/* line 205, _options-bar.scss */
 .option10 {
   background: #606060;
   border-top: none;
-  height: 180px;
-  margin: 0 10px;
-  padding: 20px; }
-
-/* line 189, _options-bar.scss */
-.option11 {
-  background: #E73354;
-  border-top: none;
-  height: 180px;
-  margin: 0 10px;
+  height: 90%;
+  margin: 0 5px;
   padding: 20px;
-  position: relative; }
-
-/* line 198, _options-bar.scss */
-.option12 {
-  background: #00ACD7;
-  border-top: none;
-  height: 100px;
-  margin: 0 10px;
-  padding: 20px;
-  position: relative;
-  bottom: 0; }
-
-/** General Styles Graphic donut**/
-/* line 3, _options-donut.scss */
-.donut-chart {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 2rem;
-  border-radius: 100%; }
-
-/* line 10, _options-donut.scss */
-p.center-date {
-  background: #fff;
   position: absolute;
-  text-align: center;
-  font-size: 28px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 130px;
-  height: 130px;
-  margin: auto;
-  border-radius: 50%;
-  line-height: 35px;
-  padding: 15% 0 0; }
-
-/* line 23, _options-donut.scss */
-.center-date span.scnd-font-color {
-  line-height: 0; }
-
-/* line 26, _options-donut.scss */
-.recorte {
-  border-radius: 50%;
-  clip: rect(0px, 200px, 200px, 100px);
-  height: 100%;
-  position: absolute;
-  width: 100%; }
-
-/* line 33, _options-donut.scss */
-.quesito {
-  border-radius: 50%;
-  clip: rect(0px, 100px, 200px, 0px);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  font-family: monospace;
-  font-size: 1.5rem; }
-
-/* line 43, _options-donut.scss */
-.donut-colors {
-  text-align: center;
-  width: 100%; }
-
-/** Option colors Graphic donut**/
-/* line 54, _options-donut.scss */
-#porcion1 {
-  -webkit-transform: rotate(0deg);
-      -ms-transform: rotate(0deg);
-          transform: rotate(0deg); }
-
-/* line 58, _options-donut.scss */
-#porcion1 .quesito {
-  background-color: #E73354;
-  -webkit-transform: rotate(76deg);
-      -ms-transform: rotate(76deg);
-          transform: rotate(76deg); }
-
-/* line 62, _options-donut.scss */
-#porcion2 {
-  -webkit-transform: rotate(76deg);
-      -ms-transform: rotate(76deg);
-          transform: rotate(76deg); }
-
-/* line 65, _options-donut.scss */
-#porcion2 .quesito {
-  background-color: #00ACD7;
-  -webkit-transform: rotate(140deg);
-      -ms-transform: rotate(140deg);
-          transform: rotate(140deg); }
-
-/* line 69, _options-donut.scss */
-#porcion3 {
-  -webkit-transform: rotate(215deg);
-      -ms-transform: rotate(215deg);
-          transform: rotate(215deg); }
-
-/* line 72, _options-donut.scss */
-#porcion3 .quesito {
-  background-color: #606060;
-  -webkit-transform: rotate(113deg);
-      -ms-transform: rotate(113deg);
-          transform: rotate(113deg); }
-
-/* line 76, _options-donut.scss */
-#porcionFin {
-  -webkit-transform: rotate(-32deg);
-      -ms-transform: rotate(-32deg);
-          transform: rotate(-32deg); }
-
-/* line 79, _options-donut.scss */
-#porcionFin .quesito {
-  background-color: #F39324;
-  -webkit-transform: rotate(32deg);
-      -ms-transform: rotate(32deg);
-          transform: rotate(32deg); }
-
-/* line 83, _options-donut.scss */
-.nota-final {
-  clear: both;
-  color: #606060;
-  font-size: 1rem;
-  padding: 2rem 0; }
-
-/* line 89, _options-donut.scss */
-.nota-final strong {
-  color: #E73354; }
-
-/* line 92, _options-donut.scss */
-.nota-final a {
-  color: #F39324;
-  font-size: inherit; }
-
-/** Porcentual and text options - Graphic donut**/
-/* line 101, _options-donut.scss */
-.menu-box {
-  height: 360px; }
-
-/* line 105, _options-donut.scss */
-.donut-chart-block {
-  overflow: hidden;
-  margin-top: 40px; }
-
-/* line 109, _options-donut.scss */
-.donut-chart-block .titular {
-  padding: 10px 0; }
-
-/* line 112, _options-donut.scss */
-.os-percentages li {
-  width: 100px;
-  text-align: center; }
-
-/* line 117, _options-donut.scss */
-.os {
-  margin: 0;
-  padding: 10px 0 5px;
-  font-size: 15px; }
-
-/* line 122, _options-donut.scss */
-.os.ios {
-  border-top: 4px solid #E73354; }
-
-/* line 125, _options-donut.scss */
-.os.mac {
-  border-top: 4px solid #00ACD7; }
-
-/* line 128, _options-donut.scss */
-.os.linux {
-  border-top: 4px solid #F39324; }
-
-/* line 131, _options-donut.scss */
-.os.win {
-  border-top: 4px solid #606060; }
-
-/* line 134, _options-donut.scss */
-.os-percentage {
-  margin: 0;
-  padding: 0 0 15px 10px;
-  font-size: 25px; }
-
-/* line 139, _options-donut.scss */
-.line-chart-block, .bar-chart-block {
-  height: 400px; }
-
-/* line 142, _options-donut.scss */
-.line-chart {
-  height: 200px;
-  background: #00ACD7; }
-
-/* line 146, _options-donut.scss */
-.time-lenght {
-  padding-top: 22px;
-  padding-left: 38px;
-  overflow: hidden; }
-
-/* line 151, _options-donut.scss */
-.time-lenght-btn {
-  display: block;
-  width: 70px;
-  line-height: 32px;
-  background: #50597b;
-  border-radius: 5px;
-  font-size: 14px;
-  text-align: center;
-  margin-right: 5px;
-  -webkit-transition: background .3s;
-  transition: background .3s; }
-
-/* line 163, _options-donut.scss */
-.time-lenght-btn:hover {
-  text-decoration: none;
-  background: #E73354; }
-
-/* line 167, _options-donut.scss */
-.month-data {
-  padding-top: 28px; }
-
-/* line 170, _options-donut.scss */
-.month-data p {
-  display: inline-block;
-  margin: 0;
-  padding: 0 25px 15px;
-  font-size: 16px; }
-
-/* line 176, _options-donut.scss */
-.month-data p:last-child {
-  padding: 0 25px;
-  float: right;
-  font-size: 15px; }
-
-/* line 181, _options-donut.scss */
-.increment {
-  color: #E73354; }
-
-/* line 184, _options-donut.scss */
-.horizontal-list {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  text-align: center;
-  margin: 0 auto; }
+  bottom: -5px; }
 
 /** Progress graphic bar general**/
 /* line 5, _options-progress-bar.scss */
@@ -619,7 +396,6 @@ p.center-date {
     box-shadow: none; }
   /* line 19, _options-progress-bar.scss */
   .progress-general-container .progress-text {
-    font: 700 12px/15px Arial,sans-serif;
     right: 15px;
     bottom: 100%;
     display: block;
@@ -630,39 +406,39 @@ p.center-date {
     -o-transition: all 0.3s; }
 
 /** Progress graphic colors **/
-/* line 36, _options-progress-bar.scss */
+/* line 35, _options-progress-bar.scss */
 .progress-colors {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
   display: inline-flex;
   margin: 0 auto; }
-  /* line 39, _options-progress-bar.scss */
+  /* line 38, _options-progress-bar.scss */
   .progress-colors .progress-text-color {
     float: left;
     margin: 10px; }
-  /* line 43, _options-progress-bar.scss */
+  /* line 42, _options-progress-bar.scss */
   .progress-colors .progress-color1 {
     background: #E73354;
     width: 20px;
     height: 20px;
     float: left;
     margin: 7px; }
-  /* line 50, _options-progress-bar.scss */
+  /* line 49, _options-progress-bar.scss */
   .progress-colors .progress-color2 {
     background: #00ACD7;
     width: 20px;
     height: 20px;
     float: left;
     margin: 7px; }
-  /* line 57, _options-progress-bar.scss */
+  /* line 56, _options-progress-bar.scss */
   .progress-colors .progress-color3 {
     background: #F39324;
     width: 20px;
     height: 20px;
     float: left;
     margin: 7px; }
-  /* line 64, _options-progress-bar.scss */
+  /* line 63, _options-progress-bar.scss */
   .progress-colors .progress-color4 {
     background: #35AA3F;
     width: 20px;
@@ -671,7 +447,7 @@ p.center-date {
     margin: 7px; }
 
 /** Porcentual options Graphic Bar**/
-/* line 78, _options-progress-bar.scss */
+/* line 77, _options-progress-bar.scss */
 .progress-bar-1 {
   float: left;
   width: 20%;
@@ -683,7 +459,7 @@ p.center-date {
   background-color: #E73354;
   box-shadow: none; }
 
-/* line 91, _options-progress-bar.scss */
+/* line 90, _options-progress-bar.scss */
 .progress-bar-2 {
   float: left;
   width: 50%;
@@ -695,7 +471,7 @@ p.center-date {
   background-color: #00ACD7;
   box-shadow: none; }
 
-/* line 104, _options-progress-bar.scss */
+/* line 103, _options-progress-bar.scss */
 .progress-bar-3 {
   float: left;
   width: 80%;
@@ -707,11 +483,223 @@ p.center-date {
   background-color: #F39324;
   box-shadow: none; }
 
-/* line 117, _options-progress-bar.scss */
+/* line 116, _options-progress-bar.scss */
 .progress-bar-4 {
   float: left;
   width: 100%;
   height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #35AA3F;
+  box-shadow: none; }
+
+/** graphic graphic bar general**/
+/* line 5, _options-graphic-bar.scss */
+.graphic-general-container {
+  margin: 20px; }
+  /* line 7, _options-graphic-bar.scss */
+  .graphic-general-container .graphic {
+    height: 20px;
+    margin-bottom: 15px;
+    overflow: visible;
+    background-color: #eaeaea;
+    border-radius: 0;
+    box-shadow: none; }
+  /* line 19, _options-graphic-bar.scss */
+  .graphic-general-container .graphic-label {
+    float: left; }
+  /* line 22, _options-graphic-bar.scss */
+  .graphic-general-container .graphic-text {
+    right: 15px;
+    bottom: 100%;
+    display: block;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s; }
+
+/** graphic graphic colors **/
+/* line 38, _options-graphic-bar.scss */
+.graphic-colors {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 0 auto; }
+  /* line 41, _options-graphic-bar.scss */
+  .graphic-colors .graphic-text-color {
+    float: left;
+    margin: 10px; }
+  /* line 45, _options-graphic-bar.scss */
+  .graphic-colors .graphic-color1 {
+    background: #E73354;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 7px; }
+  /* line 52, _options-graphic-bar.scss */
+  .graphic-colors .graphic-color2 {
+    background: #00ACD7;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 7px; }
+  /* line 59, _options-graphic-bar.scss */
+  .graphic-colors .graphic-color3 {
+    background: #F39324;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 7px; }
+  /* line 66, _options-graphic-bar.scss */
+  .graphic-colors .graphic-color4 {
+    background: #35AA3F;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 7px; }
+
+/** Porcentual options Graphic Bar**/
+/* line 80, _options-graphic-bar.scss */
+.graphic-bar-1 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  box-shadow: none; }
+
+/* line 93, _options-graphic-bar.scss */
+.graphic-bar-2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #00ACD7;
+  box-shadow: none; }
+
+/* line 106, _options-graphic-bar.scss */
+.graphic-bar-3 {
+  float: left;
+  width: 80%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #F39324;
+  box-shadow: none; }
+
+/* line 119, _options-graphic-bar.scss */
+.graphic-bar-4 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #35AA3F;
+  box-shadow: none; }
+
+/* line 131, _options-graphic-bar.scss */
+.graphic-bar-5 {
+  float: left;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  box-shadow: none; }
+
+/* line 144, _options-graphic-bar.scss */
+.graphic-bar-6 {
+  float: left;
+  width: 70%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #00ACD7;
+  box-shadow: none; }
+
+/* line 157, _options-graphic-bar.scss */
+.graphic-bar-7 {
+  float: left;
+  width: 25%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #F39324;
+  box-shadow: none; }
+
+/* line 170, _options-graphic-bar.scss */
+.graphic-bar-8 {
+  float: left;
+  width: 10%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #35AA3F;
+  box-shadow: none; }
+
+/* line 183, _options-graphic-bar.scss */
+.graphic-bar-9 {
+  float: left;
+  width: 15%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  box-shadow: none; }
+
+/* line 196, _options-graphic-bar.scss */
+.graphic-bar-10 {
+  float: left;
+  width: 30%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #00ACD7;
+  box-shadow: none; }
+
+/* line 209, _options-graphic-bar.scss */
+.graphic-bar-11 {
+  float: left;
+  width: 45%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #F39324;
+  box-shadow: none; }
+
+/* line 222, _options-graphic-bar.scss */
+.graphic-bar-12 {
+  float: left;
+  width: 100%;
+  height: 90%;
   font-size: 12px;
   line-height: 20px;
   color: #fff;
