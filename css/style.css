@@ -707,4 +707,98 @@ input.form-control {
   background-color: #35AA3F;
   box-shadow: none; }
 
+/* line 1, _import.scss */
+.import {
+  width: 600px; }
+  /* line 6, _import.scss */
+  .import .import-progress-container {
+    height: 20px;
+    margin-bottom: 50px;
+    overflow: visible; }
+  /* line 12, _import.scss */
+  .import .import-progress {
+    height: 10px;
+    margin-bottom: 15px;
+    overflow: visible;
+    background-color: #eaeaea;
+    border-radius: 0;
+    box-shadow: none;
+    clear: both; }
+
+/* line 25, _import.scss */
+.drag-content {
+  text-align: center; }
+
+/* line 28, _import.scss */
+.picture-upload {
+  float: left;
+  margin: 5px 6px 5px 0px; }
+
+/* line 32, _import.scss */
+.close-upload {
+  float: right;
+  margin: 5px 0px; }
+
+/* line 38, _import.scss */
+.import-upload {
+  top: 2px; }
+
+/* line 42, _import.scss */
+.complete {
+  text-align: left;
+  clear: both;
+  color: #999; }
+
+/* line 47, _import.scss */
+.upload-control {
+  color: #fff;
+  border: none;
+  border-radius: 0px;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  background-color: #5bc0de; }
+
+/* line 55, _import.scss */
+.upload {
+  padding: 20px;
+  border: 1px solid #999;
+  font-size: 30px;
+  color: #999;
+  margin: 20px;
+  border-radius: 50px; }
+
+/* line 63, _import.scss */
+.doc-upload {
+  float: left;
+  margin: 5px 6px 5px 0px; }
+
+/* line 67, _import.scss */
+.drag {
+  background: #eee;
+  padding: 20px;
+  height: 200px;
+  margin: 20px;
+  border: 1px dotted #999; }
+  /* line 74, _import.scss */
+  .drag p {
+    text-align: center;
+    font-weight: 700; }
+
+/* line 81, _import.scss */
+.import-progress-text h5 {
+  float: left; }
+
+/* line 85, _import.scss */
+.import-progress-bar-1 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #E73354;
+  box-shadow: none; }
+
 /*# sourceMappingURL=style.css.map */
