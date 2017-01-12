@@ -181,7 +181,8 @@ $(".mapcontainer").mapael({
         myChart2Graph = null;
 
         function generateData() {
-            var vars = Math.floor(Math.random() * 20) + 5;
+            // var vars = Math.floor(Math.random() * 20) + 5;
+            var vars = 10;
             var labels = [];
             var data = [];
             for (var i = 1; i <= vars; i++) {
@@ -193,7 +194,16 @@ $(".mapcontainer").mapael({
                 labels: labels,
                 datasets: [{
                     data: data,
-                    backgroundColor: 'rgb(0, 216, 255)'
+                    backgroundColor: ['rgb(255, 216, 0)',
+                        'rgb(255, 216, 20)',
+                        'rgb(255, 216, 50)',
+                        'rgb(255, 216, 80)',
+                        'rgb(255, 216, 110)',
+                        'rgb(255, 216, 140)',
+                        'rgb(255, 216, 170)',
+                        'rgb(255, 216, 200)',
+                        'rgb(255, 216, 230)',
+                        'rgb(255, 216, 255)']
                 }],
             }
         }
@@ -218,12 +228,12 @@ $(".mapcontainer").mapael({
                     // label: '# of Votes',
                     data: [18000, 20000, 17000, 5000, 200, 0],
                     backgroundColor: [
-                        'rgb(0, 216, 255)',
-                        'rgb(0, 216, 255)',
-                        'rgb(0, 216, 255)',
-                        'rgb(0, 216, 255)',
-                        'rgb(0, 216, 255)',
-                        'rgb(0, 216, 255)',
+                        'rgb(0, 216, 50)',
+                        'rgb(10, 216, 80)',
+                        'rgb(20, 216, 110)',
+                        'rgb(30, 216, 140)',
+                        'rgb(40, 216, 170)',
+                        'rgb(50, 216, 200)',
                         // 'rgba(255, 99, 132, 0.2)',
                         // 'rgba(54, 162, 235, 0.2)',
                         // 'rgba(255, 206, 86, 0.2)',
