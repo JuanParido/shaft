@@ -1,0 +1,524 @@
+/***********************************
+common settings
+************************************/
+
+//Colours
+$white: #fff;
+$black: #444;
+$grey: #68717A;
+$light-grey: #F2F2F2;
+$sidebar-grey: #F9F9F9;
+$main-color: #074E8F;
+$green: #52A746;
+$light-blue: #0c84e4;
+$dark-orange: #D99032;
+$orange: #EF864C;
+$color-danger: #d9534f;
+
+/***********************************
+Font-face config
+************************************/
+
+@font-face {
+    font-family: 'NokiaPureTWebLight';
+    src: url('../fonts/NokiaPureTWeb_Lt.eot');
+    src: url('../fonts/NokiaPureTWeb_Lt.eot?#iefix') format('embedded-opentype'), url('../fonts/NokiaPureTWeb_Lt.woff') format('woff'), url('../fonts/NokiaPureTWeb_Lt.ttf') format('truetype'), url('../fonts/NokiaPureTWeb_Lt.svg#NokiaPureTWebLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebRegular';
+    src: url('../fonts/NokiaPureTWeb_Rg.eot');
+    src: url('../fonts/NokiaPureTWeb_Rg.eot?#iefix') format('embedded-opentype'), url('../fonts/NokiaPureTWeb_Rg.woff') format('woff'), url('../fonts/NokiaPureTWeb_Rg.ttf') format('truetype'), url('../fonts/NokiaPureTWeb_Rg.svg#NokiaPureTWebRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebBold';
+    src: url('../fonts/NokiaPureTWeb_Bd.eot');
+    src: url('../fonts/NokiaPureTWeb_Bd.eot?#iefix') format('embedded-opentype'), url('../fonts/NokiaPureTWeb_Bd.woff') format('woff'), url('../fonts/NokiaPureTWeb_Bd.ttf') format('truetype'), url('../fonts/NokiaPureTWeb_Bd.svg#NokiaPureTWebBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$nokiafont-light: "NokiaPureTWebLight";
+$nokiafont-regular: "NokiaPureTWebRegular";
+$nokiafont-bold: "NokiaPureTWebBold";
+
+/***********************************
+margins
+************************************/
+
+.blank-top {
+    padding-top: 90px;
+}
+
+$flag-margin: 5;
+@while $flag-margin < 31 {
+    .margin-bottom-#{$flag-margin} {
+        margin-bottom: $flag-margin+px;
+    }
+    $flag-margin: $flag-margin + 5
+}
+
+$flag-margin-top: 5;
+@while $flag-margin-top < 31 {
+    .margin-top-#{$flag-margin-top} {
+        margin-top: $flag-margin-top+px;
+    }
+    $flag-margin-top: $flag-margin-top + 5
+}
+
+
+/***********************************
+Borders
+************************************/
+
+.border-right {
+    border-right: darken($light-grey, 10%) solid 1px;
+}
+
+
+/***********************************
+Tile box declaration
+************************************/
+
+.tile-box {
+    @include tile-box(20px);
+}
+
+
+/***********************************
+HTML config
+************************************/
+
+* {
+    outline: none !important;
+}
+
+body {
+    background-color: darken($sidebar-grey, 10%);
+    color: $black;
+    font-family: $nokiafont-regular;
+    font-size: 15px;
+}
+
+h1,
+h3,
+h4 {
+    margin-top: 0;
+    font-family: $nokiafont-regular;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+strong {
+    font-family: $nokiafont-bold;
+}
+
+label {
+    font-weight: 700;
+    font-family: $nokiafont-bold;
+}
+
+// .title-wrapper{
+//  margin-bottom: 20px;
+//  overflow: hidden;
+//  h1{
+//    display: inline-block;
+//    margin-bottom: 0px;
+//  }
+// }
+
+/***********************************
+status
+************************************/
+
+.status-icon {
+    font-size: 20px;
+}
+
+.pending,
+.waiting {
+    color: $grey;
+}
+
+.ok {
+    color: $green;
+}
+
+.delay {
+    color: $dark-orange;
+}
+
+.rejected {
+    color: $color-danger;
+}
+
+.info {
+    color: $light-blue;
+}
+
+
+/***********************************
+Bootstrap modifications
+************************************/
+
+// nav
+.navbar-inverse {
+    background-color: $main-color;
+    border-color: $main-color;
+}
+
+// btns
+.btn-default {
+    background-color: darken($grey, 20%);
+    border-color: darken($grey, 20%);
+    &:hover {
+        background-color: darken($grey, 30%);
+        border-color: darken($grey, 30%);
+    }
+}
+
+// Table
+.table {
+    th {
+        background: $light-blue;
+        color: $white;
+        font-family: $nokiafont-bold;
+        text-transform: uppercase;
+    }
+    &.table-td-text-center {
+        td {
+            text-align: center;
+        }
+    }
+}
+
+.two-cols {
+    tr {
+        td:first-child {
+            font-family: $nokiafont-bold;
+            width: 25%;
+        }
+    }
+}
+
+.small-actions {
+    th:last-child {
+        min-width: 80px;
+    }
+}
+
+.two-action-col {
+    th:last-child {
+        width: 230px;
+    }
+}
+
+// pager
+.pager {
+    li {
+        >a {
+            @include radius(3px);
+        }
+    }
+}
+
+// Alerts
+.alert-info {
+    background-color: $light-blue;
+    border-color: $light-blue;
+}
+
+.alert {
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
+}
+
+// background colors
+.bg-warning {
+    background-color: #f0ad4e !important;
+    color: #fff !important;
+}
+
+.bg-success {
+    background-color: #6EBE53 !important;
+    color: #fff !important;
+}
+
+.bg-danger {
+    background-color: #d9534f !important;
+    color: #fff !important;
+}
+
+// Call out
+.bs-callout {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+}
+
+.bs-callout-info {
+    border-left-color: $light-blue;
+}
+
+// Process bar
+.progress {
+    height: 15px;
+    .progress-bar {
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+// tabs and
+.nav-tabs {
+    .active {
+        a {
+            font-family: $nokiafont-bold;
+        }
+    }
+}
+
+.tab-content {
+    border: 1px solid #dddddd;
+    border-top: none;
+    padding: 20px 10px;
+}
+
+.panel {
+    &.with-nav-tabs .panel-heading {
+        padding: 5px 5px 0 5px;
+    }
+    .tab-content {
+        border: none;
+        .panel-heading{
+            padding: 10px 15px;
+        }
+    }
+    &.with-nav-tabs {
+        .nav-tabs {
+            border-bottom: none;
+        }
+        .nav-justified {
+            margin-bottom: -1px;
+        }
+    }
+}
+
+
+
+/********************************************************************/
+
+
+/*** PANEL DEFAULT ***/
+
+.with-nav-tabs.panel-default .nav-tabs > {
+    li > a {
+        color: #777;
+        &:hover,
+        &:focus {
+            color: #777;
+        }
+    }
+    .open > a {
+        color: #777;
+        background-color: #ddd;
+        border-color: transparent;
+        &:hover,
+        &:focus {
+            color: #777;
+            background-color: #ddd;
+            border-color: transparent;
+        }
+    }
+    li {
+        > a {
+            &:hover,
+            &:focus {
+                color: #777;
+                background-color: #ddd;
+                border-color: transparent;
+            }
+        }
+        &.active > a {
+            color: #555;
+            background-color: #fff;
+            border-color: #ddd;
+            border-bottom-color: transparent;
+            &:hover,
+            &:focus {
+                color: #555;
+                background-color: #fff;
+                border-color: #ddd;
+                border-bottom-color: transparent;
+            }
+        }
+        &.dropdown .dropdown-menu {
+            background-color: #f5f5f5;
+            border-color: #ddd;
+            > {
+                li > a {
+                    color: #777;
+                    &:hover,
+                    &:focus {
+                        background-color: #ddd;
+                    }
+                }
+                .active > a {
+                    color: #fff;
+                    background-color: #555;
+                    &:hover,
+                    &:focus {
+                        color: #fff;
+                        background-color: #555;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.panel.with-nav-tabs .panel-heading // List with style
+.list-items {
+    list-style: none;
+    padding-left: 20px;
+    li {
+        list-style: none;
+        margin-bottom: 10px;
+        &:before {
+            content: "\f105";
+            font-family: FontAwesome;
+            display: inline-block;
+            width: 1.2em;
+            /* same as padding-left set on li */
+            margin-left: -1.2em;
+            /* same as padding-left set on li */
+        }
+    }
+}
+
+
+/***********************************
+Plugins modifications
+************************************/
+
+// File input
+.file-preview {
+    @include radius(2px);
+}
+
+.file-preview-frame:hover {
+    box-shadow: 1px 1px 3px 0 #CBCBCB;
+}
+
+
+/**********************************
+Datatable
+**********************************/
+
+.dataTables_wrapper {
+    overflow-x: hidden;
+    .dataTables_paginate {
+        padding-bottom: 60px;
+        .paginate_button {
+            padding: 0;
+            &:hover {
+                border: none;
+                background: none;
+            }
+        }
+    }
+}
+
+table.dataTable.no-footer {
+    border-bottom: 1px solid #dddddd;
+}
+
+.errorlist {
+    list-style: none;
+    text-align: left;
+    padding: 0;
+    li {
+        color: $color-danger;
+    }
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#wrapper {
+    position: relative;
+    min-height: 100%;
+    margin-bottom: -40px;
+}
+
+
+/*Importer ajax*/
+
+.qq-upload-drop-area {
+    color: $main-color;
+    display: block !important;
+    background-color: lighten($light-blue, 40%) !important;
+    border: 2px dotted lighten($light-blue, 30%);
+    height: 200px !important;
+    min-height: 80px !important;
+    position: relative !important;
+    .fa {
+        display: block;
+        position: absolute;
+        top: 25%;
+        width: 100%;
+        margin-top: -8px;
+    }
+    span {
+        display: block;
+        position: absolute;
+        top: 70% !important;
+        width: 100%;
+        margin-top: -8px;
+        font-size: 25px !important;
+    }
+}
+
+.drop-zone-importer {
+    height: 200px !important;
+    min-height: 80px !important;
+}
+
+.qq-upload-button {
+    width: initial !important;
+    background-color: #2780e3 !important;
+    border-color: #2780e3 !important;
+    &:hover {
+        background-color: #1967be !important;
+        border-color: #1862b5 !important;
+    }
+}
+
+.qq-upload-list {
+    margin: 15px 0 !important;
+}

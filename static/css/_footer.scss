@@ -1,0 +1,19 @@
+footer {
+	background-color: $main-color;
+	color: $white;
+	//margin-top: 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	span {
+		display: block;
+		text-align: left;
+		padding: 10px 0;
+		width: 100%;
+	}
+	.logoFooter img {
+		max-width: 100px;
+		height: auto;
+	}
+}

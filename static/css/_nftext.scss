@@ -1,0 +1,89 @@
+/***********************************
+Font-face config
+************************************/
+
+@font-face {
+    font-family: 'NokiaPureTWebLight';
+    src: url('../fonts/NokiaPureTWeb_Lt.eot');
+    src: url('../fonts/NokiaPureTWeb_Lt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Lt.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Lt.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Lt.svg#NokiaPureTWebLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebRegular';
+    src: url('../fonts/NokiaPureTWeb_Rg.eot');
+    src: url('../fonts/NokiaPureTWeb_Rg.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Rg.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Rg.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Rg.svg#NokiaPureTWebRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'NokiaPureTWebBold';
+    src: url('../fonts/NokiaPureTWeb_Bd.eot');
+    src: url('../fonts/NokiaPureTWeb_Bd.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/NokiaPureTWeb_Bd.woff') format('woff'),
+         url('../fonts/NokiaPureTWeb_Bd.ttf') format('truetype'),
+         url('../fonts/NokiaPureTWeb_Bd.svg#NokiaPureTWebBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fontawesome';
+    src: url('../fonts/FontAwesome-webfont.eot');
+    src: url('../fonts/FontAwesome-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontawesome-webfont.woff') format('woff'),
+         url('../fonts/fontawesome-webfont.ttf') format('truetype'),
+         url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'exo_2regular_condensed';
+    src: url('../fonts/exo2-regularcondensed-webfont.woff2') format('woff2'),
+         url('../fonts/exo2-regularcondensed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$nokiafont-light: "NokiaPureTWebLight";
+$nokiafont-regular: "NokiaPureTWebRegular";
+$nokiafont-bold: "NokiaPureTWebBold";
+$nokiafont-ultralight: "nokia-pure-headline-ultralight";
+$font-awesome: "fontawesome";
+$exo-regular: "exo_2regular_condensed";
+
+h1, h2, h3, h4, h5, h6{
+    margin-top:0;
+    font-family: $nokiafont-regular;
+    font-weight: normal;
+}
+h1{ font-size: 36px; }
+h2{ font-size: 24px; }
+h3{ font-size: 15px; }
+h4{ font-size: 14px; }
+
+.title-wrapper{
+    margin-bottom: 20px;
+    h1{
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+}
+strong{
+    font-family: $nokiafont-bold;
+}

@@ -1,0 +1,130 @@
+//Bootsrap style custom definition for team grid
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
+
+//About page styles
+.about_title {
+	color: $gray-70;
+	font-family: $nokiafont-ultralight;
+	font-size: 50px;
+	font-weight: normal;
+	margin-top: 120px;
+	text-align: center;
+}
+.about_cont {
+	margin-top: 50px;
+	padding-bottom: 40px;
+	overflow: hidden;
+	.about_card {
+		height: 500px;
+		overflow: hidden;
+		position: relative;
+		img {
+			height: 100%;
+			margin-left: -40%;
+			filter: saturate(30%);
+			transition: 0.4s;
+		}
+		.about-details {
+		    background-color: rgba(4,22,36,.85);
+		    bottom: -30px;
+		    border-top-right-radius: 10px;
+		    color: white;
+		    display: block;
+		    height: 85px;
+		    line-height: 0.7;
+		    padding: 10px 5px;
+		    position: absolute;
+		    right: 0;
+		    transition: all 0.4s ease;
+		    width: 95%;
+		    z-index: 2;
+		    h3 {
+		    	font-family: $exo-regular;
+		    	font-size: 22px;
+		    	line-height: inherit;
+		    	text-transform: uppercase;
+		    }
+		    h4 {
+		    	line-height: inherit;
+		    	font-size: 14px;
+		    }
+		    ul {
+		    	position: absolute;
+		    	bottom: 0;
+		    	right: 5px;
+		    	font-size: 20px;
+		    	padding: 0;
+		    	list-style: none;
+		    	li {
+		    		display: inline-block;
+		    		margin: 0 2.5px;
+		    		a {
+		    			text-decoration: none;
+		    			color: white;
+		    			&:hover {
+		    				color: rgba(255,255,255,0.5);
+		    			}
+		    		}
+		    	}
+		    }
+		}
+		&:hover {
+			& img {
+				filter: saturate(100%);
+				margin-left: -60%;
+				transition: 0.4s;
+			}
+			& .about-details {
+				bottom:0;
+		    	transition: all 0.4s ease;
+		    	border-top-right-radius: 50px;
+			}
+		}
+	}
+}
+
+@media (max-width:1199px) {
+	.about_cont {
+		.about_card	{
+			.about-details {
+				height: 120px;
+				h3 {
+					line-height: 0.9;
+				}
+				h4 {
+					line-height: 0.9;
+				}
+			}
+		}
+	}
+}

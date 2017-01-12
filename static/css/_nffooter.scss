@@ -1,0 +1,20 @@
+#main_footer {
+	background-color: $darker-blue;	
+	color: white;
+	height: 40px;
+	line-height: 20px;
+	padding: 10px 40px;
+	position: absolute;
+	z-index: 110;
+	.list-unstyled{
+		margin-bottom: 0;
+	}
+	a{
+		color: white;
+		@include transition(color .5s ease);
+		&:hover{
+			color: $gray-30;
+		}
+	}
+}
+

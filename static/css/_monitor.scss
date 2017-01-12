@@ -1,0 +1,22 @@
+#monitor{
+	.monitor{
+		.routine{ width: 20%; }
+		.status{ width: 10%; }
+		.date{ width: 20%; }
+		.runs{ width: 8%; }
+		.fails{ width: 8%; }
+		.stat{ width: 25%; }
+
+		td{
+			padding: 10px 8px;
+			vertical-align: middle;
+			.progress{
+				margin-bottom: 0;
+			}
+		}
+	}
+	.modal-body {
+		max-height: calc(100vh - 210px);
+		overflow-y: auto;
+	}
+}

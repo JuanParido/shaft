@@ -1,0 +1,91 @@
+/***********************************
+Mixins
+************************************/
+/*clearfix*/
+
+@mixin clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+/*section configuration*/
+
+@mixin section-config {
+    background: white;
+    margin: 20px 0 30px 0;
+    padding: 20px;
+}
+
+
+/*Tiles generator*/
+@mixin tile-box($color, $padding, $radio-config) {
+    background-color: $color;
+    border-radius: $radio-config;
+    -moz-border-radius: $radio-config;
+    -webkit-border-radius: $radio-config;
+    
+}
+//Shadows
+@mixin shadow($shadow){
+	box-shadow: $shadow rgba(92, 92, 92, 0.20);
+    -webkit-box-shadow: $shadow rgba(92, 92, 92, 0.20);
+    -moz-box-shadow: $shadow rgba(92, 92, 92, 0.20);	
+}
+
+
+/*Border radius*/
+@mixin radius($radius) {
+    -webkit-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color;
+    /* The Fallback */
+    background: rgba($color, $opacity);
+}
+
+// REM font calculation
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+}
+
+// Transitions
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+// Ellipsis generator
+@mixin ellipsis($height, $line-to-show){
+	display: block; /* Fallback for non-webkit */
+	display: -webkit-box;
+	height: $height;
+	-webkit-line-clamp: $line-to-show;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+//Img size
+@mixin img_size(){
+	height: auto;
+	width: 100%;
+}
+
+@mixin text-shadow{
+    text-shadow: 1px 1px 1px #000000;
+}

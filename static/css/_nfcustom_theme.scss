@@ -1,0 +1,191 @@
+body{
+	font-family: $nokiafont-regular;
+	font-size: 16px;
+}
+a{
+	&:hover{
+		text-decoration: none;
+	}
+}
+//Boostrap label rewrite design
+.label{
+	font-weight: 400;
+	padding: 3px 30px;
+}
+
+hr{
+	margin: 40px 0;
+	border-top: 1px solid $gray-40;
+}
+
+.breadcrumb{
+	background-color: initial;
+	padding: 0;
+	a{
+		@include transition(color .5s ease);
+		&:hover{
+			color: $light-blue;
+		}
+	}
+}
+
+// information wrapper for tileboxing
+.tile_box{
+	@include tile-box(white, 10px, 0px);
+	margin-bottom: 10px;
+	position: relative;
+	padding-right: 20px;
+	&:last-child{
+		margin-bottom: 30px;
+	}
+}
+.tile_box_detail{
+	@include tile-box(white, 90px, 0px);
+	padding: 60px 90px;
+	&:last-child{
+		margin-bottom: 30px;
+	}
+	.post_info{
+		h1{
+			margin-bottom: 45px;
+		}
+		h2{
+			font-family: $nokiafont-light;
+			margin-bottom: 30px;
+		}
+		p{
+			line-height: 30px;
+			font-size: 18px;
+			font-family: $nokiafont-light;
+			text-align: justify;
+			margin-bottom: 20px;
+		}
+		img{
+			@include img_size();
+		}
+	}
+	.comments{
+		padding: 30px 0 0 0;
+		margin-bottom: 0px;
+		.comment{
+			border-bottom: 1px solid $gray-30;
+			padding-bottom: 30px;
+			margin-bottom: 30px;
+		}
+		.comment_who{
+
+			.comment_owner{
+				font-size: 18px;
+				color: $blue;
+				display: block;
+			}
+			.comment_date{
+				color: $gray-40;
+				font-size: 13px;
+				font-style: italic;
+			}
+		}
+		.comment_content{
+			text-align: justify;
+		}
+	}
+	.form_comment{
+		h2{
+			color: $blue;
+		}
+	}
+}
+
+.tile-box-no-padding{
+	@include tile-box(white, 0px, 0px);	
+}
+
+// tilebox titles
+.tile_title{
+	background-color: $darker-blue;
+	color: white;
+	padding: 0px 10px;
+	text-align: right;
+	h2{
+		color: white;
+		height: 55px;
+		line-height: 55px;
+		margin-bottom: 0;
+
+		.fa{
+			height: 55px;
+			line-height: 55px;
+		}
+	}
+
+}
+
+// List items
+.blog_post_list{
+}
+
+
+.post_list_th{
+	@include img_size();
+}
+.post_list_title{
+	clear: both;
+	color: $blue;
+	@include ellipsis(auto, 2);
+	max-height: 55px;
+	margin-top: 35px;
+	h2{
+		margin-top: 0px;
+	}
+	a{
+		color: $blue;
+		@include transition(color .5s ease);
+		&:hover{
+			color: $gray-70;
+		}
+	}
+	img{
+		@include img_size();
+	}
+}
+.post_list_desc{
+	@include ellipsis(75px, 3);
+	font-family: $nokiafont-light;
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.post_category_tag {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+//Image container
+.img_fullwidth{
+	img{
+		@include img_size();
+	}
+}
+//Deactivate ul border in collapsed sidebar menu
+.sb-l-m {
+	.sidebar-menu, .sidebar-menu:hover {
+		li {
+			ul {
+				border-left: none !important;
+			}
+			a {
+				.sidebar-title {
+					border-left: none !important;
+				}
+			}
+		}
+	}
+	//Relocate left menu closing gliphicon when collapsed
+	#toggle_sidemenu_l {
+		width: 60px !important;
+	}
+}
+//Relocate left menu closing gliphicon when expanded
+#toggle_sidemenu_l {
+	width: 45px !important;
+}

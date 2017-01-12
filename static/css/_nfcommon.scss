@@ -1,0 +1,56 @@
+// Swatches
+$black: #444444;
+$gray-10: #e1e1e4;
+$gray-30: #c1bec6;
+$gray-40: #938f9d;
+$gray-70: #4c4b5e;
+$light-blue: #31c5f4;
+$blue: #0056a3;
+$dark-menu-blue: #093252;
+$dark-blue: #25293e;
+$darker-blue: #041624;
+
+//Tweak to keep footer at bottom
+.content {
+  min-height: calc(100vh - 68px);
+}
+
+//Categories color labels
+.label-news{
+    background-color: #68bd45;
+    color: white;
+}
+.label-tutorial{
+    background-color: #f4ed22;
+    color: #313131;
+}
+.label-proud2benokia{
+    background-color: #0057a5;
+    color: white;
+}
+.label-blog{
+    background-color: #f8991d;
+    color: white;
+}
+.label-projects{
+    background-color: #ed1b51;
+    color: white;
+}
+.label-undefined{
+    background-color: #93909e;
+    color: #313131;
+}
+
+// Custom margins
+$flag-margin: 5;
+@while $flag-margin < 31{
+    .margin-top-#{$flag-margin}{ margin-top: $flag-margin+px !important; }
+    .margin-right-#{$flag-margin}{ margin-right: $flag-margin+px !important; }
+    .margin-bottom-#{$flag-margin}{ margin-bottom: $flag-margin+px !important; }
+    .margin-left-#{$flag-margin}{ margin-left: $flag-margin+px !important; }
+    $flag-margin: $flag-margin + 5
+}
+// Flexbox
+.flexbox { display:flex;}
+.flex-center { justify-content: center;}
+.align-center { align-items: center};

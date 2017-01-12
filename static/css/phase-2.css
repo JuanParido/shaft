@@ -1,0 +1,106 @@
+.relatify {
+  position: relative; }
+
+.text-center {
+  text-align: center; }
+
+.report-title {
+  display: inline-block;
+  float: left; }
+
+.report-main-btn {
+  cursor: pointer;
+  display: inline-block;
+  float: right; }
+  .report-main-btn .btn-text {
+    border-right: 1px solid white;
+    margin-right: 15px;
+    padding-right: 15px; }
+
+.options-btn {
+  width: 30%;
+  float: right; }
+  .options-btn .dropdown-menu {
+    left: initial;
+    padding: 15px;
+    right: 0; }
+    .options-btn .dropdown-menu li {
+      padding: 5px 0; }
+
+.report-filter {
+  clear: both;
+  height: 95px;
+  margin: 80px auto 50px;
+  padding: 30px 10px;
+  width: 95%; }
+
+.filter-reset {
+  color: white;
+  background: #DB524C;
+  border-radius: 6px;
+  margin: 0 auto;
+  width: 80px; }
+
+.filter-dropdown {
+  background: white;
+  border: 1px solid #ccc;
+  height: 35px;
+  text-align: left;
+  width: 60%; }
+
+.filter-dropdown .caret {
+  float: right;
+  margin-top: 9px; }
+
+.create-modal {
+  background: white;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  display: none;
+  left: 25%;
+  padding-bottom: 100px;
+  position: absolute;
+  top: 100px;
+  width: 50%;
+  z-index: 3; }
+  .create-modal h2 {
+    padding: 10px;
+    margin: 0 0 30px 0;
+    border-bottom: 1px solid #aaa; }
+  .create-modal .modal-container {
+    padding: 15px; }
+    .create-modal .modal-container .datepicker-container {
+      width: 80%;
+      margin: 40px auto 0; }
+    .create-modal .modal-container .modal-buttons {
+      bottom: 20px;
+      position: absolute;
+      right: 5px;
+      width: 30%; }
+      .create-modal .modal-container .modal-buttons .modal-create {
+        margin-left: 20px; }
+
+.panel-span {
+  display: block;
+  margin-bottom: 30px;
+  margin-top: 10px; }
+
+.report-panel, .alert-panel {
+  margin-top: 70px; }
+
+.report-panel {
+  display: none; }
+
+.panel-modal {
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+  width: 50%; }
+  .panel-modal span {
+    display: block;
+    margin: 100px 0 50px; }
+
+/*# sourceMappingURL=phase-2.css.map */

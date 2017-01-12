@@ -1,0 +1,23 @@
+/*Reset Style*/
+body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Arial, Helvetica,"Lucida Grande", serif; color: #000;}
+/*Remove Element*/
+.search-main, 
+.navbar-wrapper,
+#navbar-collapse-4,
+.btn,
+.dropdown,
+footer
+	{display:none;}
+
+/*Fix elements*/
+.#header .logo-app{
+	margin-top: 0;
+}
+.tile-box{ 
+	margin-top: 0px;
+	padding: 0px; 
+}
+.claro-delivery-logo{
+	height: auto;
+	width: 200px;
+}

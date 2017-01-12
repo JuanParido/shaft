@@ -1,0 +1,48 @@
+#about{
+	 .dev-wrapper{
+        border-bottom: lighten($black, 60%) solid 1px;
+        overflow: hidden;
+        padding: 5px 5px 20px 5px;
+        margin: 10px 0 20px 0;
+        &:hover{
+            background-color: lighten($black, 65%);
+        }
+
+
+        .dev-img{
+            float: left;
+            max-width: 120px;
+            margin-right: 10px;
+            width: 30%;
+            position: relative;
+            img{
+                height: auto;
+                width: 100%;
+            }
+        }
+        .dev-content{
+            float: left;
+            width:65%;
+
+        }
+        .dev-name{
+            font-family: $nokiafont-bold;
+            font-size: 18px;
+            line-height: 0.8;
+            margin-bottom: 3px;
+
+        }
+        .dev-title{
+            font-family: $nokiafont-light;
+            font-size: 14px;
+            font-style: italic;
+        }
+        .dev-social{
+            position: absolute;
+            bottom: 30px;
+            font-size: 20px;
+            width: 65%;
+        }
+    }
+
+}

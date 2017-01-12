@@ -1,0 +1,16 @@
+.logo-header th {
+  background-color: white; }
+.logo-header .print_claro_logo {
+  text-align: left; }
+.logo-header .print_nokia_logo {
+  text-align: right; }
+
+.table-invoices {
+  border: solid 1px #333333;
+  text-align: center; }
+  .table-invoices .table-title th {
+    background-color: #ff6600; }
+  .table-invoices .table-cols th {
+    background-color: #ff9900; }
+
+/*# sourceMappingURL=print_protocol.css.map */

@@ -1,0 +1,67 @@
+/*Initial styles for rebranding of CDI and base for template creation for all projects*/
+.btn-primary, .btn-success {
+	min-width: 160px;
+}
+.btn-primary {
+	background: #0d5387;
+	&:hover {
+		background: #1b7cc4;
+	}
+}
+.btn-success {
+	background: #4caf50;
+	&:hover {
+		background: #44ee4b;
+	}
+}
+.well {
+	background: #5d8aac;
+	color: white;
+	.btn-default {
+		background: #28bfe2;
+		color: white;
+		&:hover {
+			background: #209fbd;
+		}
+	}
+}
+.table {
+	th {
+		background: #033458;
+	}
+	.btn {
+		background: none;
+		color: #6aa4cf;
+		&:hover {
+			color: #ff9800;
+		}
+	}
+}
+a {
+	color: #6aa4cf;
+	transition: all 0.4s;
+	&:hover {
+		color: #ff9800;
+	}
+}
+
+.pagination {
+	li {
+		a, span{
+			color: #6aa4cf;
+		}
+	}
+	.active {
+		a, span, a:hover, a:focus, span:hover, span:focus{
+			background-color: #6aa4cf !important;
+			border-color: #6aa4cf;
+		}
+	}
+}
+
+.modal-header {
+	&.bg-primary {
+		background-color: #6aa4cf !important;
+	}
+}
+

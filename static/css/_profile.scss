@@ -1,0 +1,69 @@
+#profile{
+	
+	.avatar{
+		margin: 20px auto;
+		max-width: 160px;
+		position: relative;
+		overflow: hidden;
+		height: 160px;
+		max-height: 160px;
+		img{
+			bottom: -9999px;
+			height: 160px;
+			left: -9999px;
+			right: -9999px;
+			top: -9999px;
+			width: auto;
+			margin: auto;
+			z-index: 1;
+		}
+		.click_here{
+			background-color: rgba(0, 0, 0, .50);
+			border-radius: 50%;
+			cursor: pointer;
+			height: 100%;
+			top: 0;
+			left: 0;
+			position: absolute;
+			width: 100%;
+			z-index: 10;
+			&:before{
+				color: $white;
+				content: "Click here to upload new image";
+				text-align: center;
+				width: 100%;
+				position: absolute;
+				top: 40%;
+			}
+		}
+	}
+
+	.help-text{
+		clear: both;
+		display: block;
+		font-size: 13px;
+		font-style: italic;
+		padding-left: 20px;
+	}
+
+	.custom-weekly{
+		display: none;
+	}
+
+	.checkbox{
+		label{
+			font-family: $nokiafont-regular;
+		}
+	}
+	.select-follow{
+		font-size: 13px;
+		margin-bottom: 5px;
+		a{
+			color: $grey;
+			text-decoration: none;
+			&:hover{
+				color: $main-color;
+			}
+		}
+	}
+}

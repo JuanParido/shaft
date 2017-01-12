@@ -1,0 +1,32 @@
+.the-content {
+  .the-chart {
+    background: white;
+    margin-bottom: 20px;
+    .mapcontainer {
+      .map {
+        height: 600px;
+      }
+      svg {
+        height: 100%;
+      }
+    }
+    .chart-title {
+      background: #10476f;
+      color: white;
+      cursor: pointer;
+      font-size: 1.5em;
+      margin: 0;
+      padding: 15px;
+    }
+    .chart-body {
+      padding: 20px;
+    }
+    .chart-container {
+      border: 1px solid #dadada;
+      border-radius: 3px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      padding: 30px 10px;
+    }
+  }
+}
